@@ -46,20 +46,20 @@ main img {
 
 
 footer{
-  background color; #333;
-  color:white;
+  background-color: #333;
+  color: white;
   text-align: center;
   padding: 10px;
   position: fixed;
-  bottom:0;
+  bottom: 0;
   width: 100%;
   }
 
-  p{
+  p {
     font-size: 1.1em;
   }
 
-a{
+a {
   color: #4CAF50;
   text-decoration: none;
 
@@ -70,11 +70,11 @@ a:hover {
 
 img {
   boarder: 5px solid #4CAF50;
-  boarder-radius: 10px
+  boarder-radius: 10px;
 }
 
 
-main a[href="mailto:"] {
+main a[href^="mailto:"] {
   color: #ff5722;
   font-weight: bold;
 }
