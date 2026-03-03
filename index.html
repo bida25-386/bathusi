@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="styles.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, intial-scale=1.0">
@@ -9,11 +11,24 @@
     <body> 
         <header>
             <h1>Welcome to My Website!</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </nav>    
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="index.html" data-bs-toggle="tab" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="about.html" data-bs-toggle="tab" href="#menu1">about</a>
+              </li>
+              <li class="nav-item">
+                <a class="contact.html" data-bs-toggle="tab" href="#menu2">contact</a>
+              </li>
+            </ul>
+            
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane container active" id="home">...</div>
+              <div class="tab-pane container fade" id="menu1">...</div>
+              <div class="tab-pane container fade" id="menu2">...</div>
+            </div>  
         </header>
 
 <main>
@@ -30,6 +45,7 @@
     </body>
 </html>
         
+
 
 
 
