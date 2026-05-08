@@ -3,7 +3,7 @@
 <head> 
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Contact Us | FITZONE GYM</title> 
+    <title>Application | FITZONE GYM</title> 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head> 
@@ -20,9 +20,9 @@
                 <li><a href="about.html">ABOUT US</a></li>
                 <li><a href="services.html">SERVICES</a></li>
                 <li><a href="trainers.html">TRAINERS</a></li>
-                <li><a href="contact.html" class="active">CONTACT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
                 <li><a href="feedback.html">FEEDBACK</a></li>
-                <li><a href="application.html">APPLICATION</a></li>
+                <li><a href="application.html" class="active">APPLICATION</a></li>
             </ul>
         </nav>
         <form action="" class="search">
@@ -34,63 +34,63 @@
 
     <main> 
         <section class="page-banner reveal">
-            <h1>Contact Us</h1>
-            <p>Have questions? Our team is ready to help you reach your fitness goals.</p>
+            <h1>Join FitZone</h1>
+            <p>Take the first step towards a healthier, stronger you.</p>
         </section>
 
         <section class="section reveal">
-            <div class="grid">
-                <!-- Info Column -->
-                <div>
-                    <div class="card" style="margin-bottom: 30px; border-left: 4px solid var(--primary);">
-                        <h3><i class="fa fa-map-marker" style="color: var(--primary);"></i> Location</h3>
-                        <p>Fitzone Gym, Gaborone, Botswana</p>
-                        <p style="color: var(--text-muted);">Near Game City along A1 Lobatse Road</p>
+            <div class="form-container">
+                <h2 style="text-align: center; color: var(--primary-dark); margin-bottom: 30px;">Membership Application</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" class="form-control" placeholder="Enter your full name" required>
                     </div>
 
-                    <div class="card" style="margin-bottom: 30px; border-left: 4px solid var(--primary);">
-                        <h3><i class="fa fa-clock-o" style="color: var(--primary);"></i> Opening Hours</h3>
-                        <p><strong>Mon – Fri:</strong> 05:00 – 21:00</p>
-                        <p><strong>Saturday:</strong> 06:00 – 18:00</p>
-                        <p><strong>Sunday:</strong> 08:00 – 14:00</p>
-                    </div>
-
-                    <div class="card" style="border-left: 4px solid var(--primary);">
-                        <h3><i class="fa fa-phone" style="color: var(--primary);"></i> Direct Contact</h3>
-                        <p><strong>Phone:</strong> +267 75777066</p>
-                        <p><strong>WhatsApp:</strong> +267 76575678</p>
-                        <p><strong>Email:</strong> fitzonegym@gmail.com</p>
-                    </div>
-                </div>
-
-                <!-- Form Column -->
-                <div class="form-container" style="margin: 0; width: 100%; max-width: 100%;">
-                    <h2 style="color: var(--primary-dark); margin-bottom: 20px;">Send Us a Message</h2>
-                    <form>
+                    <div class="grid" style="gap: 20px;">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Full Name" required>
+                            <label for="age">Age</label>
+                            <input type="number" id="age" name="age" class="form-control" placeholder="Age" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email Address" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" class="form-control" placeholder="Phone Number">
-                        </div>
-                        <div class="form-group">
-                            <select class="form-control" required>
-                                <option value="">Reason for Inquiry...</option>
-                                <option value="membership">Membership</option>
-                                <option value="training">Personal Training</option>
-                                <option value="booking">Class Booking</option>
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="gender" class="form-control" required>
+                                <option value="">Select gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
                                 <option value="other">Other</option>
                             </select>
                         </div>
-                        <div class="form-group">
-                            <textarea class="form-control" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Send Message <i class="fa fa-paper-plane" style="margin-left: 5px;"></i></button>
-                    </form>
-                </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="goal">Fitness Goal</label>
+                        <select id="goal" name="goal" class="form-control" required>
+                            <option value="">Select your goal</option>
+                            <option value="weight_loss">Weight Loss</option>
+                            <option value="muscle_gain">Muscle Gain</option>
+                            <option value="fitness">General Fitness</option>
+                            <option value="endurance">Endurance Training</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Additional Notes</label>
+                        <textarea id="message" name="message" rows="5" class="form-control" placeholder="Write anything we should know..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Submit Application</button>
+                </form>
             </div>
         </section>
     </main>

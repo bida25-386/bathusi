@@ -1,126 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="styles.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, intial-scale=1.0">
-        <title>My First Github Page</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    </head>
-    <body> 
-       <header>
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>FITZONE GYM | Premium Fitness</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head> 
+<body> 
+    <header> 
+        <div class="logo">
+            <a href="index.html">
+                <h2 style="color: var(--primary-dark); font-weight: 800;">FITZONE <span style="color: var(--primary)">GYM</span></h2>
+            </a>
+        </div>
+        <nav class="nav">     
+            <ul>
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="trainers.html">TRAINERS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="feedback.html">FEEDBACK</a></li>
+                <li><a href="application.html">APPLICATION</a></li>
+            </ul>
+        </nav>
+        <form action="" class="search">
+            <input type="text" id="search-input" placeholder="Search..." name="search" required>
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <div class="menu-toggle"><i class="fa fa-bars"></i></div>
+    </header> 
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <main> 
+        <!-- Hero Section -->
+        <section class="hero reveal">
+            <div class="hero-content">
+                <h1>Transform Your <span>Body</span><br>Strengthen Your <span>Mind</span></h1>
+                <p>Train like you mean it. Welcome to Fitzone Gym, the premier fitness destination in Gaborone.</p>
+                <a href="application.html" class="btn">Join Now</a>
+                <a href="services.html" class="btn" style="background: transparent; border: 2px solid var(--primary); margin-left: 10px;">Explore Services</a>
+            </div>
+        </section>
 
-<div class="container">
+        <!-- Features Section -->
+        <section class="section reveal">
+            <div class="section-header">
+                <h2>Why Choose FitZone?</h2>
+                <p>We provide state-of-the-art facilities and professional guidance to help you reach your peak physical condition.</p>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon"><i class="fa fa-heartbeat"></i></div>
+                    <h3>Modern Equipment</h3>
+                    <p>Train with the latest cardiovascular and strength building equipment available on the market.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa fa-users"></i></div>
+                    <h3>Expert Trainers</h3>
+                    <p>Our certified personal trainers will guide you every step of the way on your fitness journey.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa fa-clock-o"></i></div>
+                    <h3>Flexible Hours</h3>
+                    <p>Open 7 days a week to accommodate your busy schedule and lifestyle.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<a class="navbar-brand" href="index.html">My Website</a>
-
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-
-<span class="navbar-toggler-icon"></span>
-
-</button>
-
-<div class="collapse navbar-collapse" id="navbarNav">
-
-<ul class="navbar-nav">
-
-<li class="nav-item">
-
-<a class="nav-link" href="index.html">Home</a>
-
-</li>
-
-<li class="nav-item">
-
-<a class="nav-link" href="about.html">About</a>
-
-</li>
-
-<li class="nav-item">
-
-<a class="nav-link" href="contact.html">Contact</a>
-
-</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</nav>
-
-</header>
-
- 
-            
-        
-
-<<main class="container my-5">
-
-<div class="row">
-
-<div class="col-md-8">
-
-<h2>Welcome to My Website!</h2>
-
-<p>This is a simple webpage hosted on GitHub Pages.</p>
-
-<p>Here's a picture of a cute cat:</p>
-
-<img src="cat.jpg" alt="A cute kitten" class="img-fluid rounded">
-
-<p class="mt-3">Visit <a href="https://github.com" class="btn btn-primary">GitHub</a> to learn more about coding.</p>
-
-</div>
-
-<div class="col-md-4">
-
-<div class="card">
-
-<div class="card-body">
-
-<h5 class="card-title">Did You Know?</h5>
-
-<p class="card-text">GitHub Pages is a free service to host static websites directly from your GitHub repository.</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</main>
-
-
-<footer>
-    <p>&copy; 2026 Bathusi Molefe</p>
-</footer>
-    </body>
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>FitZone Gym</h3>
+                <p>Transforming lives through fitness. Join the most dynamic fitness community in Botswana.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com/fitzonegymgaborone" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/fitzonegym" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services & Pricing</a></li>
+                    <li><a href="trainers.html">Our Trainers</a></li>
+                    <li><a href="application.html">Become a Member</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <p><i class="fa fa-map-marker"></i> Private Bag 265 Gaborone</p>
+                <p><i class="fa fa-phone"></i> +267 75777066</p>
+                <p><i class="fa fa-whatsapp"></i> +267 76575678</p>
+                <p><i class="fa fa-envelope"></i> <a href="mailto:fitzonegym@gmail.com">fitzonegym@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Fitzone Gym. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
